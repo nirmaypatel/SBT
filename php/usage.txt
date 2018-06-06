@@ -1,0 +1,88 @@
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/get_expenses_monthly.php // total expense by category for each month
+method: POST
+Input -
+uid
+month(optional, default = current month)
+year(optional, default = current year)
+token (value = token)
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/get_expenses.php // all expenses
+method: POST
+Input -
+uid
+token (value = token)
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/get_expenses_yearly.php // total expense for each month of a year
+method: POST
+Input -
+uid
+year(optional, default = current year)
+token (value = token)
+
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/add_expense.php
+method: POST
+Input -
+cat_id
+expense
+token (value = token)
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/delete_expense.php
+method: POST
+Input -
+ex_id
+token (value = token)
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/get_categories.php
+method: POST
+Input -
+uid
+token (value = token)
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/add_category.php
+method: POST
+Input -
+uid
+cat_name
+token (value = token)
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/delete_category.php
+method: POST
+Input -
+cat_id
+token (value = token)
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/get_goals.php
+method: POST
+Input -
+uid
+token (value = token)
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/add_goal.php
+method: POST
+Input -
+cat_id
+goal
+token (value = token)
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/delete_goal.php
+method: POST
+Input -
+cat_id
+token (value = token)
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/get_user.php
+method: POST
+Input -
+username
+password
+
+http://ec2-52-38-31-40.us-west-2.compute.amazonaws.com/create_user.php
+method: POST
+Input -
+username
+password
+fname
+lname
+age
+email

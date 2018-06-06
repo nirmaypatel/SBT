@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.anu.smartbudgettracker.Expenses">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expenses"
+        android:layout_marginTop="130dp"
+        android:textSize="25dp"
+        android:id="@+id/expensesTitle"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal|top" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="800px"
+        android:layout_marginTop="170dp"
+        android:scrollbars="none"
+        android:layout_weight="1">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:id="@+id/expTable"
+        android:isScrollContainer="true"
+        >
+        <TableRow>
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_margin="0dp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:textSize="20dp"
+                android:background="@android:color/darker_gray"
+                android:text="NAME" />
+            <TextView
+                android:textColor="@android:color/white"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:layout_margin="0dp"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:textSize="20dp"
+                android:background="@android:color/darker_gray"
+                android:text="EXPENSE ($)" />
+            <TextView
+                android:textColor="@android:color/white"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:layout_margin="0dp"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:textSize="20dp"
+                android:background="@android:color/darker_gray"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:text="Add"
+        android:id="@+id/expAdButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/round_button"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"/>
+
+
+
+</FrameLayout>

@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anu.smartbudgettracker.Goal">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goals"
+        android:layout_marginTop="130dp"
+        android:textSize="25dp"
+        android:id="@+id/goalTitle"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal|top" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="800px"
+        android:layout_marginTop="170dp"
+        android:scrollbars="none"
+        android:layout_weight="1">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:id="@+id/goalTable"
+            android:isScrollContainer="true"
+            >
+            <TableRow>
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:layout_margin="0dp"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"
+                    android:background="@android:color/darker_gray"
+                    android:text="NAME" />
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"
+                    android:background="@android:color/darker_gray"
+                    android:text="GOAL ($)" />
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"
+                    android:background="@android:color/darker_gray"
+                    android:text="" />
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"
+                    android:background="@android:color/darker_gray"
+                    android:text="" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/round_button"
+        android:textColor="@android:color/white"
+        android:text="Add"
+        android:id="@+id/goalAdButton"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"/>
+
+
+</FrameLayout>

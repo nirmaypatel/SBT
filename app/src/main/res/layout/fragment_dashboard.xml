@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anu.smartbudgettracker.Dashboard">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pcPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="120dp">
+
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Spending Information - Current Month"
+        android:id="@+id/description"
+        android:textColor="@android:color/black"
+        android:paddingBottom="100dp"
+        android:layout_gravity="center_horizontal|bottom" />
+    <Button
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text="SIGN OUT"
+        android:id="@+id/logoutBtn"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorRedButton"
+        android:textSize="20dp"/>
+</FrameLayout>
